@@ -85,6 +85,7 @@ Adicione .env ao .gitignore
 
 Use .env.example como modelo para outros usuários
 
+
 📂 Estrutura do Projeto
 arduino
 Copiar código
@@ -94,9 +95,12 @@ assistente-virtual/
 ├── .env            # sua chave local, não subir no git
 ├── .env.example    # modelo de chave
 └── images/         # coloque suas imagens aqui
+
+
 📖 Licença
 MIT License
 Use livremente para estudos e projetos pessoais.
+
 
 💡 Observações
 O modelo ViLT funciona melhor para quantidade, cores, objetos simples e ações básicas.
@@ -104,7 +108,3 @@ O modelo ViLT funciona melhor para quantidade, cores, objetos simples e ações 
 Perguntas complexas podem gerar respostas imprecisas.
 
 O sistema é voltado para projetos acadêmicos ou portfólio.
-
-👨‍💻 Autor
-Daniel Wendyson
-GitHub
