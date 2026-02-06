@@ -21,15 +21,6 @@ O projeto utiliza **ViLT** para Visual Question Answering (VQA) e **OpenAI GPT**
 
 ---
 
-## 🎨 Demo / Interface
-
-- Interface tipo **chat**  
-- Mostra imagem enviada  
-- Mostra resposta + confiança  
-- Mostra explicação detalhada do LLM  
-
----
-
 ## ⚡ Tecnologias Utilizadas
 
 - Python 3.11  
@@ -44,47 +35,46 @@ O projeto utiliza **ViLT** para Visual Question Answering (VQA) e **OpenAI GPT**
 
 ## 📦 Instalação
 
-1. Clone o repositório:
-
 ```bash
 git clone https://github.com/daniellwendyson/assistente-virtual.git
 cd assistente-virtual
-Crie um arquivo .env na raiz:
-
-txt
-Copiar código
-OPENAI_API_KEY=SUA_CHAVE_AQUI
-Instale as dependências:
+Instalar dependências:
 
 bash
 Copiar código
 py -3.11 -m pip install -r requirements.txt
+Criar arquivo .env na raiz do projeto:
+
+text
+Copiar código
+OPENAI_API_KEY=SUA_CHAVE_AQUI
 ▶️ Executar
 bash
 Copiar código
 py -3.11 -m streamlit run app.py
-Depois abra o link que aparecer no terminal.
+Abra o link que aparecer no terminal para acessar a interface web.
 
 📝 Uso
-Clique em Upload e selecione uma imagem.
+Clique em Upload e selecione uma imagem (jpg, png ou jpeg).
 
 Digite sua pergunta sobre a imagem no chat.
 
-O sistema vai mostrar:
+O sistema mostrará:
 
-Resposta do modelo ViLT
-
-Confiança (%)
-
-Explicação detalhada via OpenAI GPT
-
+text
+Copiar código
+- Resposta do modelo ViLT
+- Confiança (%)
+- Explicação detalhada via OpenAI GPT
 🔐 Boas Práticas
-Nunca compartilhe sua chave .env publicamente
+Adicione .env ao .gitignore para não subir a chave para o GitHub.
 
-Adicione .env ao .gitignore
+Crie um arquivo .env.example para servir de modelo:
 
-Use .env.example como modelo para outros usuários
-
+text
+Copiar código
+OPENAI_API_KEY=your_key_here
+Nunca compartilhe sua chave OpenAI publicamente.
 
 📂 Estrutura do Projeto
 arduino
@@ -108,3 +98,4 @@ O modelo ViLT funciona melhor para quantidade, cores, objetos simples e ações 
 Perguntas complexas podem gerar respostas imprecisas.
 
 O sistema é voltado para projetos acadêmicos ou portfólio.
+```
