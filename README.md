@@ -48,14 +48,17 @@ Criar arquivo .env na raiz do projeto:
 text
 Copiar código
 OPENAI_API_KEY=SUA_CHAVE_AQUI
-▶️ Executar
-bash
+```
+
+## ▶️ Executar
+```bash
 Copiar código
 py -3.11 -m streamlit run app.py
 Abra o link que aparecer no terminal para acessar a interface web.
+```
 
-📝 Uso
-Clique em Upload e selecione uma imagem (jpg, png ou jpeg).
+## 📝 Uso
+```Clique em Upload e selecione uma imagem (jpg, png ou jpeg).
 
 Digite sua pergunta sobre a imagem no chat.
 
@@ -66,8 +69,11 @@ Copiar código
 - Resposta do modelo ViLT
 - Confiança (%)
 - Explicação detalhada via OpenAI GPT
-🔐 Boas Práticas
-Adicione .env ao .gitignore para não subir a chave para o GitHub.
+```
+
+
+## 🔐 Boas Práticas
+```Adicione .env ao .gitignore para não subir a chave para o GitHub.
 
 Crie um arquivo .env.example para servir de modelo:
 
@@ -75,19 +81,19 @@ text
 Copiar código
 OPENAI_API_KEY=your_key_here
 Nunca compartilhe sua chave OpenAI publicamente.
+``` 
 
-📂 Estrutura do Projeto
-arduino
-Copiar código
+## 📂 Estrutura do Projeto
+```
 assistente-virtual/
 ├── app.py
 ├── requirements.txt
 ├── .env            # sua chave local, não subir no git
 ├── .env.example    # modelo de chave
 └── images/         # coloque suas imagens aqui
+```
 
-
-📖 Licença
+## 📖 Licença
 MIT License
 Use livremente para estudos e projetos pessoais.
 
@@ -98,4 +104,3 @@ O modelo ViLT funciona melhor para quantidade, cores, objetos simples e ações 
 Perguntas complexas podem gerar respostas imprecisas.
 
 O sistema é voltado para projetos acadêmicos ou portfólio.
-```
