@@ -41,31 +41,27 @@ cd assistente-virtual
 Instalar dependências:
 
 bash
-Copiar código
 py -3.11 -m pip install -r requirements.txt
 Criar arquivo .env na raiz do projeto:
 
-text
-Copiar código
+
 OPENAI_API_KEY=SUA_CHAVE_AQUI
 ```
 
 ## ▶️ Executar
 ```bash
-Copiar código
 py -3.11 -m streamlit run app.py
 Abra o link que aparecer no terminal para acessar a interface web.
 ```
 
 ## 📝 Uso
-```Clique em Upload e selecione uma imagem (jpg, png ou jpeg).
+Clique em Upload e selecione uma imagem (jpg, png ou jpeg).
 
 Digite sua pergunta sobre a imagem no chat.
 
 O sistema mostrará:
 
-text
-Copiar código
+```
 - Resposta do modelo ViLT
 - Confiança (%)
 - Explicação detalhada via OpenAI GPT
@@ -77,9 +73,9 @@ Copiar código
 
 Crie um arquivo .env.example para servir de modelo:
 
-text
-Copiar código
+```
 OPENAI_API_KEY=your_key_here
+```
 Nunca compartilhe sua chave OpenAI publicamente.
 ``` 
 
